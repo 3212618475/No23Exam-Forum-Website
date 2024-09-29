@@ -1,4 +1,4 @@
-基于SpringBoot的养老院管理系统(源代码+数据库)002
+基于Spring Boot框架实现的考编论坛网站
 =
 - 完整代码获取地址：从戎源码网 ([https://armycodes.com/](https://armycodes.com/))
 - 作者微信：19941326836  QQ：952045282 
@@ -7,52 +7,36 @@
 
 一、项目介绍
 ---
-基于Spring Boot框架实现的养老院管理系统，系统包含三种角色：管理员、老人、家属,主要功能如下。
+基于Spring Boot框架实现的考编论坛网站，系统包含两种角色：管理员、用户,系统分为前台和后台两大模块，主要功能如下。
 
+### 前台:
+- 首页: 用户可以查看最新的帖子和热门话题，以及站点的公告信息。
+- 经验交流平台: 用户可以发表新的帖子，回复其他用户的帖子，并参与讨论和交流。
+- 公告信息: 用户可以查看站点发布的公告信息，包括站点更新、活动通知等重要信息。
+- 跳蚤市场: 用户可以发布和浏览二手物品交易信息，包括出售、求购等分类信息。
+- 个人中心: 用户可以编辑个人信息，查看自己的帖子、回复和收藏等操作。
+### 后台
 ### 管理员:
 - 个人中心: 管理员可以查看和编辑个人信息。
-- 管理员管理: 管理员可以对其他管理员进行管理。
-- 用户管理: 管理员可以对家属和老人进行管理。
-- 家厘意见管理: 管理员可以查看和回复家属意见和反馈。
-- 寝室信息管理: 管理员可以管理养老院内寝室的信息。
-- 安全信息管理: 管理员可以管理养老院内的安全信息。
-- 饮食信息管理: 管理员可以管理老人的饮食信息。
-- 体检管理：管理员可以记录和管理老人的体检信息。
-- 药物管理：管理员可以管理老人的药物信息。
-- 需求袋管理：管理员可以管理老人的需求袋信息。
-- 出入信息管理：管理员可以记录和管理老人的出入信息
-- 公告信息管理：管理员可以发布和管理养老院的公告信息。
-- 基础数据管理：管理员可以管理系统的基础数据。
-
-### 家属:
-- 个人中心：家属可以查看和编辑个人信息。
-- 老人管理：家属可以管理自己关联的老人信息。
-- 家厘意见管理：家属可以提交意见和建议。
-- 寝室信息管理：家属可以查看和管理老人所在寝室的信息。
-- 安全信息管理：家属可以查看和管理老人的安全信息。
-- 饮食信息管理：家属可以查看和管理老人的饮食信息。
-- 体检管理：家属可以查看和记录老人的体检信息。
-- 出入信息管理：家属可以记录和查看老人的出入信息。
-
-### 老人:
-- 个人中心：老人可以查看和编辑个人信息。
-- 寝室信息管理：老人可以查看和管理自己所在寝室的信息。
-- 安全信息管理：老人可以查看和管理自己的安全信息。
-- 饮食信息管理：老人可以查看和管理自己的饮食信息。
-- 体检管理：老人可以查看和记录自己的体检信息。
-- 药物管理：老人可以查看和管理自己的药物信息。
-- 需求袋管理：老人可以提交自己的需求和请求。
-- 出入信息管理：老人可以记录和查看自己的出入信息。
-- 公告信息管理：老人可以查看和阅读养老院发布的公告信息。
+- 管理员管理: 管理员可以对其他管理员进行管理，包括添加、编辑和删除管理员账号。
+- 基础数据管理: 管理员可以管理系统的基础数据，包括分类、标签等信息的添加、编辑和删除。
+- 经验交流平台管理: 管理员可以管理帖子和回复，包括审核、编辑、删除等操作。
+- 公告信息管理: 管理员可以发布和管理站点的公告信息，包括添加、编辑和删除公告信息。
+- 跳蚤市场管理: 管理员可以管理跳蚤市场的交易信息，包括审核、编辑、删除等操作。
+- 用户管理: 管理员可以管理用户账号，包括查看用户信息、禁用用户账号等操作。
+- 轮播图信息: 管理员可以管理网站首页的轮播图信息，包括添加、编辑和删除轮播图信息。
 
 
 二、项目技术
 ---
-- 编程语言：Java
-- 数据库：MySQL
-- 项目管理工具：Maven
-- 前端技术：VUE
-- 后端技术：Spring、SpringMVC、MyBatis
+操作系统：Windows、macOS都可以
+JDK版本：JDK1.8以上都可以
+开发工具：IDEA、Ecplise、Myecplise都可以
+数据库: MySQL5.7以上都可以
+Tomcat：任意版本都可以
+Maven：任意版本都可以
+
+
 
 三、运行环境
 ---
@@ -65,26 +49,14 @@
 
 四、运行截图
 ---
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/1.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/1.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/2.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/3.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/4.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/5.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/6.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/7.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/8.png)
+![image_readme/1.png](https://github.com/3212618475/Exam-Forum-Website/blob/11ab4b4dd366d8b64a9732e8cb38326b10c04e66/image_readme/9.png)
 
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/2.png)
 
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/3.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/4.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/5.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/6.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/7.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/8.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/9.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/10.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/11.png)
-
-![image_readme/1.png](https://github.com/jasonlin233-cell/No002NursingHomeManagement/blob/main/image_readme/12.png)
