@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: 6
+Build-Jdk: 1.8.0_241
+Implementation-Title: kaobianluentan
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.jlwl
+Main-Class: ${start-class}
+
